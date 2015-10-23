@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Xiaoyue's Portfolio</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link href="css/portnew.css" rel="stylesheet" type="text/css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+         $("#piganimation").click(function(){
+            $("#pigvid").slideToggle(400);
+         });
+         $("#rhythm").click(function(){
+          $("#rhythmvid").slideToggle(400);
+         });
+          $("#air").click(function(){
+          $("#airvid").slideToggle(400);
+         });
+          $("#color").click(function(){
+          $("#colorvid").slideToggle(400);
+         });
+              $("#gravity").click(function(){
+          $("#gravityvid").slideToggle(400);
+         });
+});
+function toggleair(state) {
+    // if state == 'hide', hide. Else: show video
+    var div = document.getElementById("airvid");
+    var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+    div.style.display = state == 'hide' ? 'none' : '';
+    func = state == 'hide' ? 'pauseVideo' : '';
+    iframe.postMessage('{"event":"command","func":"' + func + '","args":""}','*');
+}
+
+function togglepig(state) {
+    // if state == 'hide', hide. Else: show video
+    var div = document.getElementById("pigvid");
+    var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+    div.style.display = state == 'hide' ? 'none' : '';
+    func = state == 'hide' ? 'pauseVideo' : '';
+    iframe.postMessage('{"event":"command","func":"' + func + '","args":""}','*');
+}
+
+
+function togglerhythm(state) {
+    // if state == 'hide', hide. Else: show video
+    var div = document.getElementById("rhythmvid");
+    var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+    div.style.display = state == 'hide' ? 'none' : '';
+    func = state == 'hide' ? 'pauseVideo' : '';
+    iframe.postMessage('{"event":"command","func":"' + func + '","args":""}','*');
+}
+
+
+function togglecolor(state) {
+    // if state == 'hide', hide. Else: show video
+    var div = document.getElementById("colorvid");
+    var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+    div.style.display = state == 'hide' ? 'none' : '';
+    func = state == 'hide' ? 'pauseVideo' : '';
+    iframe.postMessage('{"event":"command","func":"' + func + '","args":""}','*');
+}
+
+function togglegravity(state) {
+    // if state == 'hide', hide. Else: show video
+    var div = document.getElementById("gravityvid");
+    var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+    div.style.display = state == 'hide' ? 'none' : '';
+    func = state == 'hide' ? 'pauseVideo' : '';
+    iframe.postMessage('{"event":"command","func":"' + func + '","args":""}','*');
+}
+
+
+
+
+
+
+
+</script>
+
+
+</head>
+<body>
+  <div id="air">
+     <h1>AEOLIAN AIR BUTLER</h1>
+     <img src="images/windchime.png" alt="animation" height="150" width="240" >
+        <p><i>Aeolian Air Butler</i> ​is a smart home air-purifying system that helps the air condition at home reach its optimal state in the most efficient way. It consists of sets of sensors, mobile app and robotics on the air purifier that can communicate among each other, creating an intelligent system that provides information on and control over the air quality at home.</p>
+<p><i>Aeolian Air Butler</i> ​entered and won Autodesk Smart Home Design Challenge, Shanghai, 2015. <i>Air Butler</i> prototype was built with Arduino Yun, with customized PCB board and 3D Printing.</p>
+<p>Class: Rapid Prototyping; From Prototype to Fabrication.</p>
+  </div>
+
+
+
+  <div id="piganimation" >
+    <h1>A STORY ABOUT LONELINESS</h1>
+    <img src="images/pigthumb.png" alt="animation" height="150" width="240" >
+        <p><i>A Story About Loneliness</i> is a work of Stop Motion animation I made with a pig puppet. The animation tells how I understood loneliness. There were a bunch of questions that can be asked regarding what happened in this story and everyone can have his/her own interpretation</p>
+           <p>I composed and produced the music pieces for this story about loneliness.</p>
+          <p>This animation is produced with Dragonframe.</p>
+<p>Class: Communications Lab.</p>
+          
+  </div>
+<!-- popup and contents -->
+  <div id="rhythm">
+     <h1>RHYTHMANIA</h1>
+     <img src="images/rhythm.jpg" alt="animation" height="150" width="240" >
+        <p><i>Rhythmania</i>  is a smart pedal that chooses music to play based on the rhythm of the user stepping on it. It enables people to dance spontaneously, leaving the task of finding music to Rhythmania and disrupting the convention that people have to adjust their moves to the music.
+  </p>
+          <p>This interactive device is made possible by combining Processing and Arduino.</p>
+
+          <p><i>Rhythmania</i> was featured multiple times in events and expos.</p>
+           
+          <p >Class: Intro to Physical Computing</p>
+  </div>
+    <div id="gym">
+    <h1>GYMCRAFT</h1>
+    <img src="images/gymthumb.png" alt="animation" height="150" width="240" >
+            <p><i>Gymcraft</i> is a massive multiplayer online roleplaying game that requires action-packed work and social community to overcome obstacles. With hardware integration, fitness tracking, quests, and guilds, the user is enabled to explore a world filled with mystery and adventure. Rich landscape opens up as the user's character levels up.</p>
+          
+          <p>The prototype is finished with Intel Edison, Unity and Pebble. This is a teamwork product at 2015 China-US Young Maker Competition with Shirley Huang, Michael Lukiman and Oliver Barry.</p>
+     
+  </div>
+  <div id="color" >
+    <h1>COLORDIGGER </h1>
+    <img src="images/colordiggerthumb.jpg" alt="animation" height="150" width="240" >
+            <p><i>ColorDigger</i> is a game designed to test and enhance sensitivity to colors and instant memory.</p> 
+      <p>Circles of random colors are generated at random locations on the map for a couple of seconds as the game starts. Then the circles disappear and the bear ColorDigger need to dig them out of the map. </p>
+        <p>This is a web game built with HTML, Javascript. jQeury Mobile and Processing.</p>
+        <p >Class: Developing Web</p>
+          
+  </div>
+  <div id="bunny" >
+    <h1>AUTOLANTERN </h1>
+    <img src="images/rabbit.jpg" alt="animation" height="150" width="240" >
+            <p><i>AutoLantern</i> is a rabbit lantern that turns on itself when the environment is dark and turns off when the environment is bright. </p>
+          <p>This lantern is made with Arduino Nano.</p>
+
+          <p>This is an interactive toy I designed for MakeForKids Workshops to introduce Arduino to children. 
+          By trying to complete an AutoLantern by themselves, children can learn about the basics of electronics and 
+          Arduino as well as practice their handcrafts.</p>
+          
+  </div>
+
+
+
+
+
+    <div id="gravity">
+    <h1>GRAVITY&WIND</h1>
+    <img src="images/gravity.jpg" alt="animation" height="150" width="240" >
+            <p><i>Gravity&Wind</i> is a small program I made that simulates a bouncy ball under the force of gravity and wind, taking into consideration the gravity, the wind, air resistance and the bounciness of the ball.</p>
+            <p>I just think it is cute.</p>
+          <p>This project is built with Processing</p>
+            <p>Class: Computational Media.</p>
+  </div>
+
+    <div id="anti">
+    <h1>ANTIPROCRASTINATOR</h1>
+    <img src="images/Antiprocrastinator.png" alt="animation" height="150" width="240" >
+            <p><i>Antiprocrastinator</i>is an web app I built to help college students with overcoming procrastination.</p>
+          <p>Antiprocrastinator is basically an event manager that enables the user to set up a goal for each day
+          and set long-term and short-term project reminders. The user can define the importance and the deadline
+          of each project and keep track of them.</p>
+          <p>This project is built with Javascript, jQuery Mobile, PHP and MySQL.</p>
+  </div>
+
+
+
+<!-- popup and contents -->
+<div id="vids">
+<div id="airvid" style="float:right;width:280px;height:auto;display:none;z-index:200;">
+
+   <iframe width="260" height="150" src="https://www.youtube.com/embed/n1I39pQZ10I?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+    <a class="close" href="javascript:;" onClick="toggleair('hide');"><img src="images/closetab.png" alt="close" height="20" width="20"> </a>
+</div>
+
+<div id="pigvid" style="float:right;width:280px;height:auto;display:none;z-index:201;">
+
+   <iframe width="260" height="150" src="https://www.youtube.com/embed/SWgtz4sDdfQ?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+    <a class="close" href="javascript:;" onClick="togglepig('hide');"><img src="images/closetab.png" alt="close" height="20" width="20"> </a>
+</div>
+
+<div id="rhythmvid" style="float:right;width:280px;height:auto;display:none;z-index:202;">
+
+   <iframe width="260" height="150" src="https://www.youtube.com/embed/x0ff_lUjtss?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+    <a class="close" href="javascript:;" onClick="togglerhythm('hide');"><img src="images/closetab.png" alt="close" height="20" width="20"></a>
+
+</div>
+<div id="colorvid" style="float:right;width:280px;height:auto;display:none;z-index:202;">
+
+   <iframe width="260" height="150" src="https://www.youtube.com/embed/GhM_aaipiaI?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+    <a class="close" href="javascript:;" onClick="togglecolor('hide');"><img src="images/closetab.png" alt="close" height="20" width="20"></a>
+
+</div>
+<div id="gravityvid" style="float:right;width:280px;height:auto;display:none;z-index:202;">
+
+   <iframe width="260" height="150" src="https://www.youtube.com/embed/zO1_AMIpzqk?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+    <a class="close" href="javascript:;" onClick="togglegravity('hide');"><img src="images/closetab.png" alt="close" height="20" width="20"></a>
+
+</div>
+
+
+
+</div>
+<footer><a href="index.html"><p>Back to Home</p></a>
+  <a href="cv.html"><p>More on Xiaoyue</p></a>
+</footer>
+
+</body>
+</html>

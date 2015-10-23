@@ -1,0 +1,103 @@
+	
+@charset 'UTF-8';
+
+@font-face{font-family:'FontAwesome';src:url('font/fontawesome-webfont.eot?v=4.0.1');src:url('font/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'),url('font/fontawesome-webfont.woff?v=4.0.1') format('woff'),url('font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),url('font/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
+
+.header{
+	height:100%;
+	width:100%;
+	margin:0;
+}
+
+body{
+	overflow: hidden;
+	height:100%;
+	width: 100%;
+	background: url("images/header.jpg") no-repeat center bottom;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+a{
+	text-decoration: none;
+
+	color:white;
+}
+
+		#logo{
+		margin-top: 10%;
+		text-align: center;
+		color:white;
+		font-family: 'FontAwesome';
+		text-align: center;
+		height:100%;
+		width:100%;
+		}
+		
+		#logo h1{
+		letter-spacing: -0.025em;
+		font-size: 6em;
+		font-weight:200;
+		line-height: 1.6em;
+		}
+		
+		
+		#logo .tag{
+		line-height: 2em;
+		font-size:1.2em;
+		font-family: 'FontAwesome';
+		}
+
+
+
+             #flip1, #flip2, #flip3{
+			color:white;
+  		  	text-align: left;
+  		  	padding: 0em 1em 0 1em;
+  		  	width: 20em;
+
+			}
+			#flip2
+			  		 { 	border-right: solid 1px #FFF;
+			  		 	border-left: solid 1px #FFF;
+
+			  		 }
+
+			#panel11,#panel12, #panel13,#panel14,#panel15, #panel16, #panel21,#panel22,#panel23,#panel24,#panel25, #panel31,#panel32, #panel41 {
+	    	 display: none;
+	    	 border: solid 1px #FFF;
+	    	 background: rgba(255,255,255,0.7);
+	    	 margin-top:0;
+	    	 font-size: 80%;
+
+			}
+
+			.allpanel{
+				width:90%;
+				padding: auto;
+				margin: auto;
+
+			}
+
+			.allpanel a{
+color:#8A3251;
+			}
+
+			.tag{
+
+				float: left;
+				height: 100%;
+
+			}
+
+			#tags{
+			width:100%;
+			position: relative;
+			margin: -1.8em auto;
+			left:35%;
+
+			}
+        
+
+	
+ 
