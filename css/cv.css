@@ -1,0 +1,113 @@
+	
+@charset 'UTF-8';
+
+@font-face{font-family:'FontAwesome';src:url('font/fontawesome-webfont.eot?v=4.0.1');src:url('font/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'),url('font/fontawesome-webfont.woff?v=4.0.1') format('woff'),url('font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),url('font/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
+
+
+	body
+	{
+		margin: 0 auto;
+		background: url("images/coral.jpg") repeat left top;
+		background-color: black;
+		width: 80%;
+		background-attachment: fixed;
+
+	}
+
+
+
+#profilepic{
+	position: absolute;
+	z-index: +2;
+	left: 12%;
+	top:3%;
+	max-width: 40%;
+}
+h2
+{
+font-weight: 400;
+color: black;
+font-family: 'FontAwesome';
+margin:5% 10% 2% 10%;
+line-height: 2em;
+
+overflow: hidden;
+max-width: 100%;
+position: relative;
+left: 6%;
+}
+
+#lin1{
+	margin-left: 3.5%;
+}
+
+#lin1, #lin2, #lin3{
+float:left;
+width:28%;
+margin-bottom: 2em;
+padding-left: 1%;
+padding-right: 2%;
+min-height: 60em;
+height:100%;
+}
+
+h4{
+
+	font-family: "FontAwesome";
+	background-color: white;
+		padding-left: 0.1em;
+	color: #C74875;
+	font-family: "FontAwesome";
+}
+
+
+a{
+	color:#BF2E5D;
+}
+
+h3{
+	padding-left: 2%;
+color: black;
+	font-family: "FontAwesome";
+}
+
+ ul li
+{
+	color: rgb(240,240,240);
+	line-height: 1.5em;
+}
+
+ul ul li
+{
+	color: rgb(210,210,210);
+	font-size: 0.9em;
+} 
+
+ p
+{
+
+	color: rgb(220,220,220);
+} 
+
+br{
+	line-height: 2.9em;
+}
+
+
+footer{
+	padding-left: 1%;
+	position: fixed;
+	right: 1%;
+	bottom: 1%;
+	width: 8.4%;
+	background: rgba(255,255,255,0.6);
+	font-size: 100%;
+
+}
+
+footer a p{
+color:#8A3251;
+	font-family: 'FontAwesome';
+
+	font-size: 80%;
+}

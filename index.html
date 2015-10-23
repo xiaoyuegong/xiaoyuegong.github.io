@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Xiaoyue's Portfolio</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/new.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script> 
+			$(document).ready(function(){
+	 		   $("#flip1").click(function(){
+ 	 	   	  	$("#panel11").slideToggle(200);
+ 	 	   	 	$("#panel12").slideToggle(400);
+ 	 	   	 	 	$("#panel13").slideToggle(600);
+ 	 	   	 	 	 	$("#panel14").slideToggle(800);
+ 	 	   	 	 	 	 	$("#panel15").slideToggle(1000);
+	 		   });
+
+
+
+	 		   $("#flip2").click(function(){
+ 	 	   	  	$("#panel21").slideToggle(200);
+ 	 	   	 	$("#panel22").slideToggle(400);
+ 	 	   	 	 	$("#panel23").slideToggle(600);
+ 	 	   	 	 	 	$("#panel24").slideToggle(800);
+ 	 	   	 	 	 	 	$("#panel25").slideToggle(1000);
+	 		   });
+	 		   $("#flip3").click(function(){
+ 	 	   	  	 	$("#panel31").slideToggle(300);
+ 	 	   	 	$("#panel32").slideToggle(400);
+	 		   });
+	 		   	   $("#flip4").click(function(){
+ 	 	   	  		$("#panel41").slideToggle(300);
+ 	 	   	 	$("#panel42").slideToggle(400);
+	 		   });
+
+			});
+		</script>
+	</head>
+	<body>
+    	<div class="header">
+			<div id="logo">
+				<h1><a href="cv.html">Xiaoyue Gong</a></h1>
+				<div id="tags">
+					<div class="tag">
+						<span>
+							<a href="#" id="flip1">Hacker</a>   
+						</span>
+						<div class="allpanel">
+							<a href="portfolio.html#air"><p id="panel11">IoT</p></a>
+							<a href="portfolio.html#rhythm"><p id="panel12">Device</p></a>
+							<a href="portfolio.html#anti"><p id="panel13">Web</p></a>
+							<a href="portfolio.html#gym"><p id="panel15">VR</p></a>
+						</div>
+					</div>
+					<div class="tag">
+						<span>
+							<a href="#" id="flip2">Designer</a>   
+						</span>
+						<div class="allpanel">
+							<a href="portfolio.html#air"><p id="panel21">Smart Home</p></a>
+							<a href="portfolio.html#piganimation"><p id="panel22">Storytelling</p></a>
+							<a href="portfolio.html#rhythm"><p id="panel23">Interaction</p></a>
+						</div>
+					</div>
+					<div class="tag">
+						<span>
+							<a href="#" id="flip3">Animator</a>
+						</span>
+
+						<div class="allpanel">
+							<a href="portfolio.html#piganimation"><p id="panel31">Stop Motion</p></a>
+							<a href="portfolio.html#gravity"><p id="panel32">Simulation</p></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
