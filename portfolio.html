@@ -21,6 +21,9 @@ $(document).ready(function(){
           $("#air").click(function(){
           $("#airvid").slideToggle(400);
          });
+          $("#aeo").click(function(){
+          $("#aeovid").slideToggle(400);
+         });
           $("#color").click(function(){
           $("#colorvid").slideToggle(400);
          });
@@ -28,6 +31,15 @@ $(document).ready(function(){
           $("#gravityvid").slideToggle(400);
          });
 });
+function toggleaeo(state) {
+    // if state == 'hide', hide. Else: show video
+    var div = document.getElementById("aeovid");
+    var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+    div.style.display = state == 'hide' ? 'none' : '';
+    func = state == 'hide' ? 'pauseVideo' : '';
+    iframe.postMessage('{"event":"command","func":"' + func + '","args":""}','*');
+}
+
 function toggleair(state) {
     // if state == 'hide', hide. Else: show video
     var div = document.getElementById("airvid");
@@ -86,11 +98,18 @@ function togglegravity(state) {
 
 </head>
 <body>
+    <div id="aeo">
+     <h1>AEOLIAN EYE</h1>
+     <img src="images/aeo.png" alt="animation" height="150" width="240" >
+        <p><i>Aeolian Eye</i> ​is an Internet of Things system that provides the real-time air quality data of public and private indoor areas for residents in Chinese cities through a web application, that enhances the information with Augmented Reality.</p>
+<p><i>Aeolian Eye</i> ​documentation....</p>
+<p>Class: Capstone Studio</p>
+  </div>
   <div id="air">
-     <h1>AEOLIAN AIR BUTLER</h1>
+     <h1>AIR BUTLER</h1>
      <img src="images/windchime.png" alt="animation" height="150" width="240" >
-        <p><i>Aeolian Air Butler</i> ​is a smart home air-purifying system that helps the air condition at home reach its optimal state in the most efficient way. It consists of sets of sensors, mobile app and robotics on the air purifier that can communicate among each other, creating an intelligent system that provides information on and control over the air quality at home.</p>
-<p><i>Aeolian Air Butler</i> ​entered and won Autodesk Smart Home Design Challenge, Shanghai, 2015. <i>Air Butler</i> prototype was built with Arduino Yun, with customized PCB board and 3D Printing.</p>
+        <p><i>Air Butler</i> ​is a smart home air-purifying system that helps the air condition at home reach its optimal state in the most efficient way. It consists of sets of sensors, mobile app and robotics on the air purifier that can communicate among each other, creating an intelligent system that provides information on and control over the air quality at home.</p>
+<p><i>Air Butler</i> ​entered and won Autodesk Smart Home Design Challenge, Shanghai, 2015. <i>Air Butler</i> prototype was built with Arduino Yun, with customized PCB board and 3D Printing.</p>
 <p>Class: Rapid Prototyping; From Prototype to Fabrication.</p>
   </div>
 
@@ -173,7 +192,12 @@ function togglegravity(state) {
 
 <!-- popup and contents -->
 <div id="vids">
-<div id="airvid" style="float:right;width:280px;height:auto;display:none;z-index:200;">
+  <div id="aeovid" style="float:right;width:280px;height:auto;display:none;z-index:200;">
+
+<iframe width="260" height="150" src="https://www.youtube.com/embed/wlBi544lPho" frameborder="0" allowfullscreen></iframe>    
+<a class="close" href="javascript:;" onClick="toggleair('hide');"><img src="images/closetab.png" alt="close" height="20" width="20"> </a>
+</div>
+<div id="aeovid" style="float:right;width:280px;height:auto;display:none;z-index:200;">
 
    <iframe width="260" height="150" src="https://www.youtube.com/embed/n1I39pQZ10I?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
     <a class="close" href="javascript:;" onClick="toggleair('hide');"><img src="images/closetab.png" alt="close" height="20" width="20"> </a>

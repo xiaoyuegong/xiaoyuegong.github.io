@@ -1,0 +1,107 @@
+	
+@charset 'UTF-8';
+
+.header{
+	height:100%;
+	width:100%;
+}
+
+body{
+	overflow: hidden;
+	height:100%;
+	width: 100%;
+	background: url("images/header.jpg") no-repeat center bottom;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: 'Ubuntu', sans-serif;
+	/*xwborder: solid 1px #FFF;*/
+	margin-left: 0;
+}
+
+a{
+	text-decoration: none;
+	color:white;
+}
+
+		#logo{
+		text-align: center;
+		color:white;
+		height:100%;
+		width:100%;
+		margin: auto;
+		}
+		
+		#logo h1{
+		letter-spacing: -0.01em;
+		font-size: 6em;
+		font-weight:200;
+		line-height: 2em;
+		}
+		
+             #flip1, #flip2, #flip3{
+			color:white;
+  		  	text-align: center;
+  		  	padding: 0em 2em 0 2em;
+
+			}
+			#flip2
+			  		 { 	border-right: solid 1px #FFF;
+			  		 	border-left: solid 1px #FFF;
+
+			  		 }
+
+			#panel11,#panel12, #panel13,#panel14,#panel15, #panel16, #panel21,#panel22,#panel23,#panel24,#panel25, #panel31,#panel32, #panel41 {
+	    	 display: none;
+	    	 background: rgba(255,255,255,0.5);
+	    	 font-size: 80%;
+	    	 text-align: center;
+	    	 /*padding: 0em 2em 0 2em;*/
+
+			}
+
+			.allpanel a{
+
+				color:#8A3251;
+			}
+
+			.allpanel {
+				position:absolute;
+				color:#8A3251;
+				width: 100%;
+				/*border: solid 1px #FFF;*/
+				line-height: 2em;
+			    font-size:1.1em;
+			    margin-left: 0;
+
+			}
+
+			#panel1{
+			margin-left: 24%;
+			width: 16%;
+			min-width: 6em;
+			}
+
+			#panel2{
+			margin-left: 42%;
+			width: 16%;
+			min-width: 6em;
+			}
+
+			#panel3{
+			margin-left: 60%;
+			width: 16%;
+			min-width: 6em;
+
+			}
+
+
+			.tag{
+			/*border: solid 1px #FFF;*/
+			/*float: left;*/
+			display: inline-block;
+			line-height: 2em;
+			font-size:1.2em;
+			margin: auto;
+	
+			}
+
