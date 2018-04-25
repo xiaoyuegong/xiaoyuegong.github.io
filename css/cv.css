@@ -18,7 +18,7 @@
 section{
 	z-index: -10;
 	background-color: rgba(0,0,0,0.6);
-	width: 80%;
+	width: 90%;
 	margin: auto;
 
 }
@@ -33,7 +33,7 @@ section{
 	display: inline;
 	margin:  1em ;
 	position: relative;
-	max-width: 25%;
+	max-width: 40%;
 	padding: 1em;
 	overflow: hidden;
 }
@@ -52,8 +52,8 @@ color: white;
 overflow: hidden;
 max-width: 80%;
 line-height: 1.2em;
-padding: 2em;
-font-weight: 100;
+padding: 1em;
+font-weight: 6;
 }
 
 
